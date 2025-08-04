@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Embong Wungu Coffe</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+            padding-top: 56px; /* Adjust for fixed navbar height */
+        }
+        .text-brown { color: #8B4513; }
+        .bg-orange-100 { background-color: #FFF8F0; } /* Light orange for sections */
+        .section-padding { padding: 4rem 1rem; }
+        @media (min-width: 768px) { .section-padding { padding: 6rem 2rem; } }
+        @media (min-width: 1024px) { .section-padding { padding: 8rem 4rem; } }
+    </style>
+</head>
+<body class="bg-light text-dark">
+
+    <!-- Navbar (Included for navigation consistency) -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand text-brown fw-bold rounded-3 p-2" href="index.html">Embong Wungu Coffee</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tentang-kami.html">Tentang Kami</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="produk.html">Produk</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profilUMKM.html">Profil UMKM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="artikel-tips.html">Artikel & Tips</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="daftar-login.html">Daftar & Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="kontak.html">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Bagian Kontak -->
+        <section id="kontak" class="bg-white section-padding">
+            <div class="container text-center">
+                <h2 class="display-4 fw-bold text-brown mb-5">Hubungi Kami</h2>
+                <p class="lead text-secondary mb-5 mx-auto" style="max-width: 700px;">Kami senang mendengar dari Anda! Jangan ragu untuk menghubungi kami untuk pertanyaan, saran, atau pemesanan.</p>
+
+                <!-- Sub-bagian Formulir & Media Sosial -->
+                <div class="row g-5">
+                    <!-- Formulir Kontak -->
+                    <div class="col-md-6">
+                        <div class="card shadow-lg rounded-4 p-4 bg-orange-100 h-100">
+                            <h3 class="display-5 fw-bold text-brown mb-4">Kirim Pesan</h3>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="contact-name" class="form-label fw-bold text-dark">Nama Lengkap</label>
+                                    <input type="text" id="contact-name" name="contact-name" class="form-control rounded-3 py-2 px-3" placeholder="Nama Anda">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="contact-email" class="form-label fw-bold text-dark">Email</label>
+                                    <input type="email" id="contact-email" name="contact-email" class="form-control rounded-3 py-2 px-3" placeholder="email@example.com">
+                                </div>
+                                <div class="mb-4">
+                                    <label for="contact-message" class="form-label fw-bold text-dark">Pesan Anda</label>
+                                    <textarea id="contact-message" name="contact-message" rows="6" class="form-control rounded-3 py-2 px-3" placeholder="Tulis pesan Anda di sini..."></textarea>
+                                </div>
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-warning btn-lg rounded-pill fw-bold shadow-sm">Kirim Pesan</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Media Sosial & Kontak Cepat -->
+                    <div class="col-md-6">
+                        <div class="card shadow-lg rounded-4 p-4 bg-orange-100 h-100">
+                            <h3 class="display-5 fw-bold text-brown mb-4">Temukan Kami di Media Sosial</h3>
+                            <p class="lead text-secondary mb-4">Ikuti kami di media sosial untuk mendapatkan update terbaru, promo menarik, dan konten seputar kopi!</p>
+                            <div class="d-flex justify-content-center justify-content-md-start gap-4 mb-5">
+                                <a href="https://www.instagram.com/EmbongWunguCoffe" target="_blank" class="text-secondary fs-2 hover-pink">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://www.facebook.com/EmbongWunguCoffe" target="_blank" class="text-secondary fs-2 hover-blue">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://www.tiktok.com/@EmbongWunguCoffe target="_blank" class="text-secondary fs-2 hover-dark">
+                                    <i class="fab fa-tiktok"></i>
+                                </a>
+                                <a href="https://wa.me/6281234567890" target="_blank" class="text-secondary fs-2 hover-green">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
+                            <h3 class="display-5 fw-bold text-brown mb-4">Pertanyaan Umum (FAQ)</h3>
+                            <div class="accordion accordion-flush" id="faqAccordion">
+                                <div class="accordion-item rounded-3 mb-2 shadow-sm">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed fw-semibold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                            Apakah ada Wi-Fi gratis?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body text-secondary">Ya, kami menyediakan Wi-Fi gratis untuk semua pelanggan kami.</div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item rounded-3 shadow-sm">
+                                    <h2 class="accordion-header" id="flush-headingTwo">
+                                        <button class="accordion-button collapsed fw-semibold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            Apakah bisa pesan online?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body text-secondary">Tentu, Anda bisa memesan melalui WhatsApp atau aplikasi GoFood/GrabFood.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (Included for consistency) -->
+    <footer class="bg-dark text-white py-4 text-center">
+        <div class="container">
+            <p>&copy; Embong Wungu Coffe. Semua Hak Dilindungi Undang-Undang.</p>
+            <div class="d-flex justify-content-center gap-3 mt-3">
+                <a href="tentang-kami.html" class="text-white text-decoration-none hover-brown">Tentang Kami</a>
+                <a href="produk.html" class="text-white text-decoration-none hover-brown">Produk</a>
+                <a href="kontak.html" class="text-white text-decoration-none hover-brown">Kontak</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
